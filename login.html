@@ -16,8 +16,8 @@
     </style>
 </head>
 
-<body style="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);">
-
+<!-- <body style="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);"> -->
+    <body>
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="bg-white p-5 rounded-5 shadow">
             <div class=" text-center"><i class="fa-regular fa-circle-user fa-5x"></i></div>
@@ -37,6 +37,7 @@
             </form>
         </div>
     </div>
+    
     <script>
         const button = document.getElementById('login');
 
@@ -62,7 +63,7 @@
                 }
                 console.log('Completed!', response);
             } catch (err) {
-
+                
                 console.error(`Error: ${err}`);
             }
         });

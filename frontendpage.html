@@ -1,43 +1,132 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Beautiful Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            margin-top: 50px;
-        }
-        
-        h1 {
-            color: #008080;
-        }
-        
-        p {
-            font-size: 1.2em;
-            line-height: 1.6em;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <title>Home Page</title>
 </head>
 
+<!-- Top menu -->
 <body>
-    <div class="container">
-        <h1>Welcome to a Beautiful Page</h1>
-        <p>This is a simple and beautiful webpage.</p>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
     </div>
-</body>
+    <div><span style="font-size:30px;cursor:pointer"  onclick="openNav()">&#9776;</span></div>
 
+<!-- search-box -->
+<p class="search-title1">ชิ้นส่วนอะไหล่</p>
+<div class ="input-search">
+<input list="brow"name="search-box" placeholder="Search">
+<datalist id="brow">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+</datalist> 
+</div>
+
+<p class="search-title2">ยี่ห้อรถ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;รุ่นรถ</p>
+<div class="input-search2">
+<input list="brow"name="search-box" placeholder="Search">
+<datalist id="brow">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+</datalist>  
+
+<input list="brow"name="search-box" placeholder="Search">
+<datalist id="brow">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+</datalist>  
+ </div>
+
+
+<div class="input-search3">
+<input list="brow"name="search-box" placeholder="Search">
+<datalist id="brow">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+</datalist>  
+<input list="brow"name="search-box" placeholder="Search">
+<datalist id="brow">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+</datalist>  
+ </div>
+
+ <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="image/croissant.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image/croissant.jpg" alt="Steak" style="width:100%">
+      <h3>Let Me Tell You About This Steak</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image/croissant.jpg" alt="Cherries" style="width:100%">
+      <h3>Cherries, interrupted</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image/croissant.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="image/croissant.jpg" alt="Popsicle" style="width:100%">
+      <h3>All I Need Is a Popsicle</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image/popsicle.jpg" alt="Salmon" style="width:100%">
+      <h3>Salmon For Your Skin</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image/salmon.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image/sandwich.jpg" alt="Croissant" style="width:100%">
+      <h3>Le French</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+
+
+ 
+ 
+
+
+<!-- <button class="logout-btn">logout</button> -->
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<script src="./logout.js"></script>
+</body>
 </html>
