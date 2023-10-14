@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
   <title>Home Page</title>
 </head>
 
@@ -13,61 +13,105 @@
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
+        <a href="page1.html" target="_blank">About</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>
         <a href="#">Contact</a>
     </div>
     <div><span style="font-size:30px;cursor:pointer"  onclick="openNav()">&#9776;</span></div>
 
+
 <!-- search-box -->
-<p class="search-title1">ชิ้นส่วนอะไหล่</p>
-<div class ="input-search">
-<input list="brow"name="search-box" placeholder="Search">
-<datalist id="brow">
-  <option value="Internet Explorer">
-  <option value="Firefox">
-</datalist> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+
+ <div class ="w3-main w3-content w3-padding">
+  <p class="search-title"><b>ชิ้นส่วนอะไหล่</b></p>
+  <select id="select-state" name="search-box"  placeholder="Pick a state...">
+    <option value="">Select a state...</option>
+    <option value="AL">การส</option>
+    <option value="AK">สอน</option>
+    <option value="AZ">ยาว</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+  </select>
+
+
+  <div class="w3-half">
+  <p class="search-title"><b>ยี่ห้อรถ</b></p>
+  <select id="select-state" name="search-box2"  placeholder="Pick a state...">
+    <option value="">Select a state...</option>
+    <option value="AL">การส</option>
+    <option value="AK">สอน</option>
+    <option value="AZ">ยาว</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+  </select>
+ 
+
+  
+  <p class="search-title"><b>ยี่ห้อรถ</b></p>
+  <select id="select-state" name="search-box3"  placeholder="Pick a state...">
+    <option value="">Select a state...</option>
+    <option value="AL">การส</option>
+    <option value="AK">สอน</option>
+    <option value="AZ">ยาว</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+  </select>
+  </div>
+
+  <div class="w3-half">
+  <p class="search-title"><b>ยี่ห้อรถ</b></p>
+  <select id="select-state" name="search-box"  placeholder="Pick a state...">
+    <option value="">Select a state...</option>
+    <option value="AL">การส</option>
+    <option value="AK">สอน</option>
+    <option value="AZ">ยาว</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+  </select>
+
+
+
+  <p class="search-title"><b>ยี่ห้อรถ</b></p>
+  <select id="select-state" name="search-box"  placeholder="Pick a state...">
+    <option value="" >Select a state...</option>
+    <option value="AL">การส</option>
+    <option value="AK">สอน</option>
+    <option value="AZ">ยาว</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+  </select>
+  </div>
+  <a href="frontendpage.html">ล้างข้อมูลทั้งหมด</a>
 </div>
 
-<p class="search-title2">ยี่ห้อรถ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;รุ่นรถ</p>
-<div class="input-search2">
-<input list="brow"name="search-box" placeholder="Search">
-<datalist id="brow">
-  <option value="Internet Explorer">
-  <option value="Firefox">
-</datalist>  
-
-<input list="brow"name="search-box" placeholder="Search">
-<datalist id="brow">
-  <option value="Internet Explorer">
-  <option value="Firefox">
-</datalist>  
- </div>
-
-
-<div class="input-search3">
-<input list="brow"name="search-box" placeholder="Search">
-<datalist id="brow">
-  <option value="Internet Explorer">
-  <option value="Firefox">
-</datalist>  
-<input list="brow"name="search-box" placeholder="Search">
-<datalist id="brow">
-  <option value="Internet Explorer">
-  <option value="Firefox">
-</datalist>  
- </div>
+ 
 
  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="image/croissant.jpg" alt="Sandwich" style="width:100%">
+    <a href="page1.html" target="_blank">
+
+    <div class="w3-quarter w3-padding-16" style="border-radius: 25px;">
+      <img src="image/croissant.jpg" alt="Sandwich" style="width:100% ; border-radius: 25px;">
       <h3>The Perfect Sandwich, A Real NYC Classic</h3>
       <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
+  </a>
     <div class="w3-quarter">
       <img src="image/croissant.jpg" alt="Steak" style="width:100%">
       <h3>Let Me Tell You About This Steak</h3>
@@ -86,6 +130,7 @@
     </div>
   </div>
   
+
   <!-- Second Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center">
     <div class="w3-quarter">
@@ -108,16 +153,14 @@
       <h3>Le French</h3>
       <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
+
+    <label for="img">Select image:</label>
+    <input type="file" id="img" name="img" accept="image/*">
+    <input type="submit">
+  
   </div>
 
-
- 
- 
-
-
 <!-- <button class="logout-btn">logout</button> -->
-
-
 
 <script>
 function openNav() {
@@ -126,7 +169,13 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+//search
+$(document).ready(function () {
+      $('select').selectize({
+          sortField: 'text'
+      });
+  });
+
 </script>
-<script src="./logout.js"></script>
 </body>
 </html>

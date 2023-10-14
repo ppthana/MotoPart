@@ -1,11 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-body{
-    
-}
+
 span{
     align-items: left;
 }
@@ -44,41 +41,12 @@ font-size: 36px;
 margin-left: 50px;
 }
 
-p.search-title1 {
-text-align: center;
+p.search-title{
 font-family: 'Raleway', sans-serif;
 }
 
-p.search-title2 {
-    margin-right:140px;
-    margin-left:100px;
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-}
-
-
-.input-search{
-display:flex;
-align-items: center;
-justify-content: center;
-height: 30px;
-}
-.input-search2{
-    display:flex;
-align-items: center;
-justify-content: center;
-}
-.input-search3{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
-
-
-
