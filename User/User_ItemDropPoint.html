@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <title>User_ItemDropPoint</title>
+</head>
+    <style>
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+  }
+
+
+table td {
+  background-color: #fff;
+  padding: 10px;
+}
+
+tr {
+  border-bottom: 1px solid #ddd; 
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+table th {
+  background-color: #ff9800;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.button1{
+      display: inline-block;
+      outline: none;
+      cursor: pointer;
+      padding: 0 16px;
+      background-color: #fff;
+      border-radius: 0.25rem;
+      border: 1px solid #dddbda;
+      color: black;
+      font-size: 13px;
+      line-height: 30px;
+      font-weight: 400;
+      text-align: center;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+    </style>
+    <body style="background-color: whitesmoke">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="User_HomePage.html">HOME</a>
+            <a href="User_OrderDate.html">ORDERDATE</a>
+            <a href="User_ItemDropPoint.html">DROPPOINT</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="st">
+          <nav>
+              <span style="font-size:30px;cursor:pointer"  onclick="openNav()">&#9776;</span>
+              <img src="image/new.png" class="user-pic "; onclick="ToggleMenu()">
+              <div class="sub-menu-wrap" id="subMenu">
+                  <div class="sub-menu">
+                    <div class="user-info">
+                      <img src="image/new.png" >
+                      <h2>Peem sdaad</h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                      <img src="image/profile.png">
+                      <p>Edit Profile</p>
+                      <span>></span>
+                    </a>
+            
+                    <a href="#" class="sub-menu-link">
+                      <img src="image/logout.png">
+                      <p>logout</p>
+                      <span>></span>
+                    </a>
+                  </div>
+                </div>
+          </nav>
+
+    
+   <div class="w3-container w3-padding">
+    <table  class="center w3-padding">
+        <tr> 
+        <th>วันที่/เดือน/ปี</th> <th>รหัสสินค้า</th><th>ชื่อสินค้า</th><th>จำนวน</th><th>ยืนยันรับสินค้า</th>
+        </tr>
+        
+        <tr>
+        <td>able cell</td>
+        <td >Table cell 2</td>         
+        <td >Table cell 2</td>        
+        <td >Table cell 2</td>                             
+        </tr>
+
+  
+
+        </table>
+   </div>
+
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  let subMenu = document.getElementById("subMenu");
+function ToggleMenu(){
+  subMenu.classList.toggle("open-menu");
+}
+    </script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Item description</title>
+
+
+  </head>
+  
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Admin_Homepage.html">HOME</a>
+      <a href="Admin_OrderDate.html">ORDERDATE</a>
+      <a href="Admin_ItemDropPoint.html">DROPPOINT</a>
+      <a href="#">Contact</a>
+  </div>
+
+  <div class="st">
+    <nav>
+        <span style="font-size:30px;cursor:pointer"  onclick="openNav()">&#9776;</span>
+        <img src="image/profile.png" class="user-pic "; onclick="ToggleMenu()">
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+              <div class="user-info">
+                <img src="image/new.png" >
+                <h2>Peem sdaad</h2>
+              </div>
+              <hr>
+              <a href="#" class="sub-menu-link">
+                <img src="image/profile.png">
+                <p>Edit Profile</p>
+                <span>></span>
+              </a>
+      
+              <a href="#" class="sub-menu-link">
+                <img src="image/logout.png">
+                <p>Logout</p>
+                <span>></span>
+              </a>
+            </div>
+          </div>
+    </nav>
+ 
+    <button onclick="editable()">Enable Editing</button>
+    <button onclick="uneditable()">Disable Editing</button>
+    <button onclick="">save</button>
+
+  <div class="w3-main w3-content w3-padding"> 
+  <div class="w3-center">
+    <img src="image/croissant.jpg" alt="Sandwich" style="width:30% ; border-radius: 25px;">
+</div>
+
+      <h3 class="title"> ชื่อสินค้า</h3>
+      <div class="w3-padding-16" style="background-color: paleturquoise; text-align: center; border-radius: 25px;">
+        <p class="title">รายละเอียดสินค้า</p>
+      </div>
+  </div>
+
+
+
+  <script>
+    //hamburger
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+    // edit mode
+    function editable() {
+      document.body.contentEditable = true;
+    }
+    function uneditable() {
+      document.body.contentEditable = false;
+    }
+    let subMenu = document.getElementById("subMenu");
+  function ToggleMenu(){
+  subMenu.classList.toggle("open-menu");
+  }
+    </script>
+    
+  </body>
+</html>

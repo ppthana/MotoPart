@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <title>Admin_OrderDate</title>
+</head>
+    <style>
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+  }
+
+table td {
+  background-color: #fff;
+  padding: 10px;
+}
+
+tr {
+  border-bottom: 1px solid #ddd; 
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+table th {
+  background-color: gainsboro;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+    </style>
+    <body style="background-color: whitesmoke">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Admin_Homepage.html">HOME</a>
+            <a href="Admin_OrderDate.html">ORDERDATE</a>
+            <a href="Admin_ItemDropPoint.html">DROPPOINT</a>
+            <a href="#">HISTORY</a>
+        </div>
+        <div class="st">
+          <nav>
+              <span style="font-size:30px;cursor:pointer"  onclick="openNav()">&#9776;</span>
+              <img src="image/new.png" class="user-pic "; onclick="ToggleMenu()">
+              <div class="sub-menu-wrap" id="subMenu">
+                  <div class="sub-menu">
+                    <div class="user-info">
+                      <img src="image/new.png" >
+                      <h2>Peem sdaad</h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                      <img src="image/profile.png">
+                      <p>Edit Profile</p>
+                      <span>></span>
+                    </a>
+            
+                    <a href="#" class="sub-menu-link">
+                      <img src="image/logout.png">
+                      <p>logout</p>
+                      <span>></span>
+                    </a>
+                  </div>
+                </div>
+          </nav>
+
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2>รายการสั่งสินค้า</h2>
+        <div class="form-element">
+          <label for="DATE">วันที่/เดือน/ปี</label>
+          <input type="date" id="birthday" name="birthday">
+        </div>
+        <div class="form-element">
+          <label for="nameItem">ชื่อสินค้า</label>
+          <input type="text" id="" placeholder="รหัสสินค้า">
+        </div>
+        
+        <div class="form-element">
+          <button>confirm</button>
+        </div>
+      </div>
+        
+    </div>
+    
+
+   <div class="w3-container w3-padding">
+    
+    <div class="stbutton">
+      <button id="addOrder">+ เพิ่มรายการสั่งใหม่</button>
+    </div>
+
+    <table  class="center w3-padding">
+        <tr> 
+        <th>วันที่/เดือน/ปี</th> <th>รายการสินค้า</th><th>ชื่อสินค้า</th><th>จำนวน</th><th>
+        </tr>
+        
+        <tr>
+        <td>able cell</td>
+        <td >Table cell 2</td>                                
+        </tr>
+
+
+        </table>
+   </div>
+
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  let subMenu = document.getElementById("subMenu");
+function ToggleMenu(){
+  subMenu.classList.toggle("open-menu");
+}
+
+document.querySelector("#addOrder").addEventListener("click",function(){
+  document.querySelector(".popup").classList.add("active");
+})
+
+document.querySelector(".popup .close-btn").addEventListener("click",function(){
+  document.querySelector(".popup").classList.remove("active");
+})
+
+    </script>
+<body>
+    
+</body>
+</html>

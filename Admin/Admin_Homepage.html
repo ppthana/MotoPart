@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Admin_HomePage</title>
+</head>
+
+<!-- Top menu -->
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Admin_Homepage.html">HOME</a>
+        <a href="Admin_OrderDate.html">ORDERDATE</a>
+        <a href="Admin_ItemDropPoint.html">DROPPOINT</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="st">
+      <nav>
+          <span style="font-size:30px;cursor:pointer"  onclick="openNav()">&#9776;</span>
+          <img src="image/profile.png" class="user-pic "; onclick="ToggleMenu()">
+          <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <img src="image/new.png" >
+                  <h2>Peem sdaad</h2>
+                </div>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                  <img src="image/profile.png">
+                  <p>Edit Profile</p>
+                  <span>></span>
+                </a>
+        
+                <a href="#" class="sub-menu-link">
+                  <img src="image/logout.png">
+                  <p>Logout</p>
+                  <span>></span>
+                </a>
+              </div>
+            </div>
+      </nav>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+
+ <div class ="w3-container w3-content w3-padding">
+  <p class="search-title"><b>ชิ้นส่วนอะไหล่</b></p>
+  <select id="select-state" name="search-box"  placeholder="Pick a state..." >
+    <option value="">Select a state...</option>
+    <option value="AL">การส</option>
+    <option value="AK">สอน</option>
+    <option value="AZ">ยาว</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+  </select>
+
+
+  <div class="w3-half">
+  <p class="search-title"><b>ยี่ห้อรถ</b></p>
+  <select id="select-state" name="search-box2"  placeholder="Pick a state...">
+    <option value="">Select a state...</option>
+    <option value="AL">การส</option>
+    <option value="AK">สอน</option>
+    <option value="AZ">ยาว</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+  </select>
+ 
+
+  <p class="search-title"><b>ยี่ห้อรถ</b></p>
+  <select id="select-state" name="search-box3"  placeholder="Pick a state...">
+    <option value="">Select a state...</option>
+    <option value="AL">การส</option>
+    <option value="AK">สอน</option>
+    <option value="AZ">ยาว</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+  </select>
+  </div>
+
+
+  <div class="w3-half">
+  <p class="search-title"><b>ยี่ห้อรถ</b></p>
+  <select id="select-state" name="search-box"  placeholder="Pick a state...">
+    <option value="">Select a state...</option>
+    <option value="AL">การส</option>
+    <option value="AK">สอน</option>
+    <option value="AZ">ยาว</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+  </select>
+
+
+
+
+  <p class="search-title"><b>ยี่ห้อรถ</b></p>
+  <select id="select-state" name="search-box"  placeholder="Pick a state...">
+    <option value="" >Select a state...</option>
+    <option value="AL">การส</option>
+    <option value="AK">สอน</option>
+    <option value="AZ">ยาว</option>
+    <option value="AR">Arkansas</option>
+    <option value="CA">California</option>
+    <option value="CO">Colorado</option>
+    <option value="CT">Connecticut</option>
+  </select>
+  </div>
+  <a href="frontendpage.html">ล้างข้อมูลทั้งหมด</a>
+</div>
+
+ 
+ <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <a href="Admin_itemdesc.html" target="_blank">
+    <div class="w3-quarter w3-padding-16" style="border-radius: 25px;">
+      <img src="image/croissant.jpg" alt="Sandwich" style="width:100% ; border-radius: 25px;">
+      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </a>
+
+    <div class="w3-quarter">
+      <img src="image/croissant.jpg" alt="Steak" style="width:100%">
+      <h3>Let Me Tell You About This Steak</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  
+    <div class="w3-quarter">
+      <img src="image/croissant.jpg" alt="Cherries" style="width:100%">
+      <h3>Cherries, interrupted</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p>
+    </div>
+
+    <div class="w3-quarter">
+      <img src="image/croissant.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+  
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="image/croissant.jpg" alt="Popsicle" style="width:100%">
+      <h3>All I Need Is a Popsicle</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image/popsicle.jpg" alt="Salmon" style="width:100%">
+      <h3>Salmon For Your Skin</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image/salmon.jpg" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="image/sandwich.jpg" alt="Croissant" style="width:100%">
+      <h3>Le French</h3>
+      <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+
+    <label for="img">Select image:</label>
+    <input type="file" id="img" name="img" accept="image/*">
+    <input type="submit">
+  </div>
+
+  
+
+  </div>
+   
+
+<!-- search-box -->
+
+
+<!-- <button class="logout-btn">logout</button> -->
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+//search
+$(document).ready(function () {
+      $('select').selectize({
+          sortField: 'text'
+      });
+  });
+
+let subMenu = document.getElementById("subMenu");
+function ToggleMenu(){
+  subMenu.classList.toggle("open-menu");
+}
+
+</script>
+</body>
+</html>

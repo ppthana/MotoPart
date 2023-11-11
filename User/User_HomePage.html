@@ -6,20 +6,43 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-  <title>Home Page</title>
+  <title>User_HomePage</title>
 </head>
 
 <!-- Top menu -->
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
+        <a href="User_HomePage.html">HOME</a>
+        <a href="User_OrderDate.html">ORDERDATE</a>
+        <a href="User_ItemDropPoint.html">DROPPOINT</a>
         <a href="#">Contact</a>
     </div>
-    <div class="w3-container"><span style="font-size:30px;cursor:pointer"  onclick="openNav()">&#9776;</span></div>
-
+    <div class="st">
+      <nav>
+          <span style="font-size:30px;cursor:pointer"  onclick="openNav()">&#9776;</span>
+          <img src="image/profile.png" class="user-pic "; onclick="ToggleMenu()">
+          <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <img src="image/new.png" >
+                  <h2>Peem sdaad</h2>
+                </div>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                  <img src="image/profile.png">
+                  <p>Edit Profile</p>
+                  <span>></span>
+                </a>
+        
+                <a href="#" class="sub-menu-link">
+                  <img src="image/logout.png">
+                  <p>Logout</p>
+                  <span>></span>
+                </a>
+              </div>
+            </div>
+      </nav>
 
 <!-- search-box -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -55,7 +78,6 @@
   </select>
  
 
-  
   <p class="search-title"><b>ยี่ห้อรถ</b></p>
   <select id="select-state" name="search-box3"  placeholder="Pick a state...">
     <option value="">Select a state...</option>
@@ -68,6 +90,7 @@
     <option value="CT">Connecticut</option>
   </select>
   </div>
+
 
   <div class="w3-half">
   <p class="search-title"><b>ยี่ห้อรถ</b></p>
@@ -99,36 +122,39 @@
   <a href="frontendpage.html">ล้างข้อมูลทั้งหมด</a>
 </div>
 
+
  
  <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <a href="page1.html" target="_blank">
-
+    <a href="User_itemdesc.html" target="_blank">
     <div class="w3-quarter w3-padding-16" style="border-radius: 25px;">
       <img src="image/croissant.jpg" alt="Sandwich" style="width:100% ; border-radius: 25px;">
       <h3>The Perfect Sandwich, A Real NYC Classic</h3>
       <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
   </a>
+
     <div class="w3-quarter">
       <img src="image/croissant.jpg" alt="Steak" style="width:100%">
       <h3>Let Me Tell You About This Steak</h3>
       <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
+  
+
     <div class="w3-quarter">
       <img src="image/croissant.jpg" alt="Cherries" style="width:100%">
       <h3>Cherries, interrupted</h3>
       <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
       <p>What else?</p>
     </div>
+
     <div class="w3-quarter">
       <img src="image/croissant.jpg" alt="Pasta and Wine" style="width:100%">
       <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
       <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
     </div>
   </div>
-  
 
   <!-- Second Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center">
@@ -174,7 +200,10 @@ $(document).ready(function () {
           sortField: 'text'
       });
   });
-
+  let subMenu = document.getElementById("subMenu");
+function ToggleMenu(){
+  subMenu.classList.toggle("open-menu");
+}
 </script>
 </body>
 </html>
